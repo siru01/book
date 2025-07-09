@@ -20,7 +20,7 @@ export default function Books() {
 
   const fetchBooks = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/api/books/`, {
+      const res = await axios.get(`https://book-backend-4o76.onrender.com/api/books/`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -34,7 +34,7 @@ export default function Books() {
   const handleAdd = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${BASE_URL}/api/books/`, newBook, {
+      await axios.post(`https://book-backend-4o76.onrender.com/api/books/`, newBook, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

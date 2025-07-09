@@ -12,7 +12,7 @@ export default function Login() {
     e.preventDefault();
     try {
       // 1️⃣ Attempt to log in
-      const res = await axios.post('http://127.0.0.1:8000/api/token/', {
+      const res = await axios.post('https://book-backend-4o76.onrender.com/api/token/', {
         username,
         password,
       });
@@ -26,7 +26,7 @@ export default function Login() {
       if (retry) {
         try {
           // 4️⃣ Register the user
-          await axios.post('http://127.0.0.1:8000/api/register/', {
+          await axios.post('https://book-backend-4o76.onrender.com/api/register/', {
             username,
             email,
             password,
