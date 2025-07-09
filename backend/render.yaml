@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: book-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn bookapi.wsgi:application --bind 0.0.0.0:8000
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: bookapi.settings
