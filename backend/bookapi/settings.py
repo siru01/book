@@ -8,8 +8,6 @@ ALLOWED_HOSTS = ['book-backend-1-mdlq.onrender.com', 'localhost', '127.0.0.1']
 
 SECRET_KEY = 'django-insecure-d*(r41k_&ztfb*2$+@1m=fk79$23hu#r@4%37uzmo$2x^c(967'
 DEBUG = True
-ALLOWED_HOSTS = []
-
 # ✅ Installed Apps
 INSTALLED_APPS = [
     'django.contrib.admin',
